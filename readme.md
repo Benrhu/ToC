@@ -138,31 +138,11 @@ Distributed under the MIT License.
 <!-- CONTACT -->
 ## Contact
 
-Rubén díaz - [@your_twitter](https://twitter.com/rubdh89) - rubendiaz300000@gmail.com
+Rubén díaz - [@Rubdh89](https://twitter.com/rubdh89) - rubendiaz300000@gmail.com
 
 Project Link: [https://github.com/Benrhu/ToC](https://github.com/Benrhu/ToC)
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-
-<p align="right">(<a href="#top">Back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
