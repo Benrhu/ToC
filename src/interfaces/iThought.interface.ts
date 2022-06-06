@@ -2,7 +2,7 @@
 import { obsessions } from "./iObsession.interface.ts"
 
 
-// Cada elemento de la Array desecandena una serie de intrusiveThoughts
+// Cada evento llama a unos iThoughts concretos.
 export enum events {
     NEWCRYPTO = 'Ohhh!! A new crypto launched!',
     FINISHED = 'I finished the exercise started 3 days ago already!',

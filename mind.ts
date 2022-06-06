@@ -1,6 +1,8 @@
 'use strict';
+import { events } from './src/interfaces/iThought.interface';
 // @ts-ignore
 import perception from './src/interfaces/perception.interface.ts'
+import { eventsUp } from './src/processes/iThought.process';
 // @ts-ignore
 import { intrusive } from "./src/processes/iThought.process.ts";
 
@@ -19,7 +21,7 @@ function mind(){
         setTimeout(function(){
             var rndm = Math.floor(Math.random()*5);
             if(rndm == 3){
-                intrusive()
+                eventsUp()
             }
             console.log(thoughts[i]) },
             1000 * i);
