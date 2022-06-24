@@ -1,4 +1,6 @@
 // @ts-ignore
+import { events } from "../interfaces/iThought.interface.ts";
+// @ts-ignore
 import { iThoughtsList } from "../interfaces/iThought.interface.ts";
 
 // Función que imprime los iThoughts
@@ -10,17 +12,19 @@ export const intrusive = () => {
 
     setInterval(() => {
         console.log(
-            `intrusive thought: ${rndmThought[Math.floor(Math.random() * rndmThought.length)]}`
+            `--> ${rndmThought[Math.floor(Math.random() * rndmThought.length)]} <--`
         );
       }, 800);
 }
 
-/* export function eventsUp(events: events) {
-        var rndm = Math.floor(Math.random()*5);
+export const eventUp = (events: events) => {
+        const rndm = Math.floor(Math.random()*5);
+        let rndmEvent = Object.values(events);
+        console.log(`** ${Math.floor(Math.random() * rndmEvent.length)} **`);
             if(rndm == 3){
-                let ran = Math.floor(Math.random()*events.length)
+                intrusive()
             }
-} */
+}
 
 
 export default { intrusive }
