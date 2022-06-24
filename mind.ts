@@ -1,4 +1,4 @@
-'use strict';
+
 
 /**
  * The mind is constantly thinking {thoughts}, all right.
@@ -12,7 +12,14 @@
  * + An obsession can give you a dilemma, when you've to choose between differents options ande each other have a reality consecuence which can hurt the another reality.
  * + This occurs when getting two or more things at the same time.
  * 
+ * Steps:
+ * 1. Make a mind thinking all time => setInterval => think() [DONE]
+ * 2. When an event happens, make a iThoughts storm in mind space => [DONE]
+ * 3. 
  */
+
+// @ts-ignore
+import { intrusive } from "./src/processes/iThought.process.ts";
 
 let thoughts: string[] = [
     '¿Cómo irán las criptos?',
@@ -20,20 +27,22 @@ let thoughts: string[] = [
     '¡El BTC ha subido!',
     'El BTC ha bajado!',
     'Empieza a hacer frío...',
-    'Tengo que accabar de desarrollar ese proyecto',
+    'Tengo que acabar de desarrollar ese proyecto',
     '¿Qué hago para cenar?',
     '¿Escribo un libro?'
 ]
 
 function think() {
-    for (let i = 0; i < thoughts.length; i++) {
-        setTimeout(function(){
-            /* var rndm = Math.floor(Math.random()*5);
-            if(rndm == ){
-            } */
-            console.log(thoughts[i]) },
-            800 * i);
-    }   
+
+    setInterval(() => {
+        var rndm = Math.floor(Math.random()*5);
+        console.log(thoughts[Math.floor(Math.random() * thoughts.length)]);
+        if(rndm == 3){
+            intrusive()
+        }
+      }, 1000);
+
+    
 }
 
 function mind() {
