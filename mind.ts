@@ -19,7 +19,7 @@
  */
 
 // @ts-ignore
-import { intrusive } from "./src/processes/iThought.process.ts";
+import { eventUp } from "./src/processes/iThought.process.ts";
 
 let thoughts: string[] = [
     '¿Cómo irán las criptos?',
@@ -38,11 +38,10 @@ function think() {
         var rndm = Math.floor(Math.random()*5);
         console.log(thoughts[Math.floor(Math.random() * thoughts.length)]);
         if(rndm == 3){
-            intrusive()
+            eventUp()
         }
       }, 1000);
 
-    
 }
 
 function mind() {
