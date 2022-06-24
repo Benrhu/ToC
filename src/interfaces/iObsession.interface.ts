@@ -13,16 +13,9 @@ export enum areaInvolved {
     KNOWLEDGE = 'Knowledge'
 }
 
-export enum priority {
-    LOW = 'Low',
-    MEDIUM = 'Medium',
-    HIGH = 'High'
-}
-
 export const iObsession = {
     obsessions: obsessions,
     areaInvolved: areaInvolved,
-    priority: priority
 }
 
-export default { obsessions, areaInvolved, priority, iObsession}
+export default { obsessions, areaInvolved, iObsession}

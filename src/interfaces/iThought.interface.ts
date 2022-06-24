@@ -1,18 +1,16 @@
 // @ts-ignore
-import { obsessions } from "./iObsession.interface.ts"
+import { obsessions } from "./iObsession.interface.js"
 
 
 // Cada evento llama a unos iThoughts concretos.
 export enum events {
-    NEWCRYPTO = 'Ohhh!! A new crypto launched!',
-    FINISHED = 'I finished the exercise started 3 days ago already!',
-    ANGELS = 'Ohhh, 11:22am, an angel message :)'
+    LOSSTRADE = 'Fuck! I lost $500',
+    FINISHED = 'I have finally finished this project!',
+    WRONGMINDSET = 'Ooh, I cannot believe that I amm listening from this person...',
 }
 
-
-export const iThoughts = {
-    on: false,
-    giveProgress: false,
+// Intrusive Thoughts => iThought
+export const iThought = {
     fromObs: obsessions,
     iThoughtsList: [
         'Tengo que mirar criptos para tener más ingresos',
@@ -23,4 +21,4 @@ export const iThoughts = {
     ]
 }
 
-export default { events, iThoughts }
+export default { events, iThought }
