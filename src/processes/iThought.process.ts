@@ -17,10 +17,10 @@ export const intrusive = () => {
       }, 800);
 }
 
-export const eventUp = (events: events) => {
+export const eventUp = () => {
         const rndm = Math.floor(Math.random()*5);
         let rndmEvent = Object.values(events);
-        console.log(`** ${Math.floor(Math.random() * rndmEvent.length)} **`);
+        console.log(`--> ${rndmEvent[Math.floor(Math.random() * rndmEvent.length)]} <--`);
             if(rndm == 3){
                 intrusive()
             }
